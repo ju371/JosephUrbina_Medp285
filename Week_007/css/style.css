@@ -1,5 +1,86 @@
 @import url('file:///C:/Users/denne/OneDrive/Desktop/JosephUrbina_Medp285/Week_007/poem.html')
 
+* {
+    margin: 0px;
+}
+    body, html {
+    width: 100%;
+    height: 100%;
+}
+    
+/* Laptop */
+    @media screen and (max-width: 1400px) {
+    .container
+{
+    max-width: 1000px;
+    display: flex;
+    margin: 50px 0;
+    justify-content: space-around;
+    
+}
+  .box .content
+{
+    position: absolute;
+    bottom: 20px;
+    left:10%;
+    width: 80%;
+    height: 60px;
+    background: black;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+}      
+   .box:hover .content
+{
+    width: ;
+    height: ;
+    bottom: ;
+    left: ;
+
+}     
+}
+
+/* Mobile */ 
+@media screen and (max-width: 320px) {
+.container
+{
+    max-width: 1000px;
+    display: flex;
+    margin: 50px 0;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    
+}
+.box .content
+{
+    position: absolute;
+    bottom: 20px;
+    left:10%;
+    width: 80%;
+    height: 60px;
+    background: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.box:hover .content
+{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+
+}    
+    h1, h3{
+        padding: inherit;
+    }    
+}
+
+
 
 .body
 {
@@ -15,16 +96,13 @@
  font-family: "Monument Extended", Arial, Helvetica, sans-serif;
 }
 
-
 .eye{
     width: 200px;
     height: 200px;
     background: white;
-    position: sticky;
-    display:flex;
-    top: 70%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(-0%,-0%) rotate(45deg);
     border-radius: 75% 0;
     overflow: hidden;
     cursor: pointer;
@@ -35,7 +113,7 @@
     background: #222f3e;
     border-radius: 50%;
     border: 30px solid #576574;
-   position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -69,7 +147,7 @@ p, td{
 }
 h1{
         text-align: center;
-            color: #E9E9E9;
+        color: #E9E9E9;
 }
 h4{
     text-align: center;
@@ -77,13 +155,25 @@ h4{
 }
 h3, h2{
      text-align: center;
-         color: #E9E9E9;
+     color: #E9E9E9;
 }
 .limit{
     width:800px
 }
 
-
+.container1
+{
+    max-width: 1000px;
+    margin: 10px;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    justify-content: space-around
+    
+}
 .container
 {
     max-width: 1000px;
@@ -107,7 +197,7 @@ h3, h2{
 }
 .box .imgBx
 {
-   position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -188,7 +278,7 @@ a{
 a::before{
   content:"";
   position: absolute;
-   top:2px;
+  top:2px;
   left:2px;
   bottom:2px;
   width:50%;
@@ -196,7 +286,7 @@ a::before{
 }
 
 a span:nth-child(1){
-    align-content: flex-end;
+  align-content: flex-end;
   position:absolute;
   top:0;
   left:0;
@@ -212,7 +302,7 @@ a span:nth-child(1){
 }
 
 a span:nth-child(2){
-    align-content: flex-end;
+  align-content: flex-end;
   position:absolute;
   top:0;
   right:0;
@@ -229,14 +319,14 @@ a span:nth-child(2){
 }
 
 a span:nth-child(3){
-    align-content: flex-end;
+  align-content: flex-end;
   position:absolute;
   bottom:0;
   right:0;
   width:100%;
   height:2px;
   background: linear-gradient(to left, #E9E9E9, grey);
-    animation:animate3 1.25s linear infinite;
+  animation:animate3 1.25s linear infinite;
 }
 
 @keyframes animate3{
@@ -245,7 +335,7 @@ a span:nth-child(3){
 }
 
 a span:nth-child(4){
-    align-content: flex-end;
+  align-content: flex-end;
   position:absolute;
   top:0;
   left:0;

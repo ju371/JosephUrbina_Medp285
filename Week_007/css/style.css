@@ -291,7 +291,7 @@ a span:nth-child(4){
 
 
 /* Laptop */
-    @media (min-width: 426px) and (max-width: 2560px) {
+    @media (min-width: 769px) and (max-width: 2560px) {
 .container
 {
     max-width: 1000px;
@@ -412,8 +412,9 @@ a{
     left: 0;
 
 }    
-h1, h3{
-        padding: inherit;
+h1 {
+  font-size: 20px;
+  padding: 10px;
 }
 .blind-eye {
         display: none;
@@ -432,3 +433,56 @@ h1, h3{
         text-align: center;
     }
 }
+
+/* Tablet */ 
+@media (min-width: 426px) and (max-width: 768px){
+.container
+{
+    max-width: 1000px;
+    display: flex;
+    margin: 50px 0;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    
+}
+.box .content
+{
+    position: absolute;
+    bottom: 20px;
+    left:10%;
+    width: 80%;
+    height: 60px;
+    background: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.box:hover .content
+{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+
+}    
+h1, h3{
+        padding: inherit;
+}
+
+.clue h2{
+    display: none;
+    
+}
+.granted{
+        align-content: center;
+}
+.granted h2{
+        font-family:monospace;
+        font-size: 25px;
+        color: greenyellow;
+        text-align: center;
+    }
+}
+

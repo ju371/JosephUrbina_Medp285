@@ -300,20 +300,7 @@ a span:nth-child(4){
     flex-wrap: nowrap;
     justify-content: space-around;
 }
-.box .content
-{
-    position: absolute;
-    bottom: 20px;
-    left:10%;
-    width: 80%;
-    height: 60px;
-    background: black;
-    transition: 0.1s;
-    overflow: hidden;
-    border-radius: 10px;
-    padding: 15px;
-    box-sizing: border-box;
-}      
+  
 .box:hover:disabled .content
 {
     width: 0;
@@ -327,23 +314,63 @@ a span:nth-child(4){
     transition-delay: 0.1s;
     background-color: black;
 }
+.box .content
+{
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    width: 5px;
+    height: 60px;
+    background: black;
+    transition: 0.2s;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+        .box p, h4 {
+            color:black;
+        }
 .shut span{
     display: block;
     width: 100%;
-    height: 15%;
+    height: 0px;
     background: #ff6b6b;
-    border-radius: 0 0 60% 60%;
+    border-radius: 20% 20% 5% 80%;
     transition: 0.4s all;
-    width: 300px;
+    width: 400px;
     height: 160px;
     position: absolute; 
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) rotate(5deg);
+    left: 38%;
+    transform: translate(-40%,-79%) rotate(-11deg);
     z-index: 999;
 }
-    .eye:hove:disabled > .shut span{
+.eye:hove:disabled > .shut span{
     
+}
+.eye{
+    width: 200px;
+    height: 200px;
+    background: white;
+    top: 80%;
+    left: 50%;
+    transform: translate(-0%,-0%) rotate(45deg);
+    border-radius: 75% 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.ball{
+    width: 40px;
+    height: 40px;
+    background: #222f3e;
+    border-radius: 50%;
+    border: 30px solid #576574;
+    position: absolute;
+    top: 70%;
+    left: 69%;
+    bottom:35%;
+    transform: translate(-50%,-50%);
 }
         h1, h3 {
             text-decoration-line: line-through;
@@ -363,19 +390,16 @@ a{
   overflow:hidden;
 }
         a span:nth-child(1){
-        background: linear-gradient(to right, red, #ff6b6b);
+        display: none;
         }
         a span:nth-child(2){
-        background: linear-gradient(to bottom, red, #ff6b6b);    
+        display: none;    
         }
         a span:nth-child(3){
-        background: linear-gradient(to left, red, #ff6b6b);
+        display: none;
         }
         a span:nth-child(4){
-        background: linear-gradient(to top, red, #ff6b6b);       
-        }
-        .granted h2{
-            display:none;
+        display: none;       
         }
 }
 
@@ -419,20 +443,7 @@ h1 {
 .blind-eye {
         display: none;
 } 
-.clue h2{
-    display: none;
-    
-}
-.granted{
-        align-content: center;
-}
-.granted h2{
-        font-family:monospace;
-        font-size: 25px;
-        color: greenyellow;
-        text-align: center;
-    }
-}
+
 
 /* Tablet */ 
 @media (min-width: 426px) and (max-width: 768px){
@@ -470,19 +481,3 @@ h1 {
 h1, h3{
         padding: inherit;
 }
-
-.clue h2{
-    display: none;
-    
-}
-.granted{
-        align-content: center;
-}
-.granted h2{
-        font-family:monospace;
-        font-size: 25px;
-        color: greenyellow;
-        text-align: center;
-    }
-}
-
